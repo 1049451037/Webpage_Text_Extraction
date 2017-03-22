@@ -51,6 +51,8 @@ def clean(soup):
         pass
 
 os.makedirs('output',exist_ok=True)
+file = open("out.csv", "w")
+file.close()
 with open('encoding.txt', 'r') as f:
     page_encoding = f.readline().replace('\n', '')
     file_encoding = f.readline().replace('\n', '')
@@ -63,6 +65,8 @@ with open("pool.txt", "r") as f:
 cnt = 0
 for url in pool:
     try:
+        if len(url)<30:
+            continue;
         v = []
         par = urlparse(url)
         Default_Header = {'X-Requested-With': 'XMLHttpRequest',
@@ -77,7 +81,7 @@ for url in pool:
         except Exception as e:
             pass
         filt = ['script', 'noscript', 'style', 'embed', 'label', 'form', 'input', 'iframe', 'head', 'meta', 'link',
-                'object', 'aside', 'img']
+                'object', 'aside', 'img', 'channel']
         for ff in filt:
             for i in soup.find_all(ff):
                 i.decompose()
