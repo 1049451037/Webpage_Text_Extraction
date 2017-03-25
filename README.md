@@ -1,4 +1,4 @@
-# Webpage_Textual_Extraction
+# Webpage_Text_Extraction
 an uniform webpage extraction algorithm
 
 ## Requirement
