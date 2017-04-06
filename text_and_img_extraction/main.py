@@ -109,6 +109,7 @@ for url in pool:
         file.close()
         with open("output/out" + str(cnt) + ".html", "w",
                   encoding=file_encoding) as f:  # encoding should be chosen properly
+            f.write('<meta charset="%s" />\n'%(file_encoding))
             f.write(
                 "<a href='out" + str(cnt - 1) + ".html'>pre</a> <a href='out" + str(
                     cnt + 1) + ".html'>next</a>\n<h3>initial url: </h3><a href=\"" + url + "\"target='_blank'>" + url + "</a><br><h3>textual infomation: </h3><h4>" + title + "</h4>\n")
