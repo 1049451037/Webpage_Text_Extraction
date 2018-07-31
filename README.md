@@ -4,6 +4,7 @@ Extract main textual information from HTML.
 
 ## Requirement
 
+* Python 3
 * beautifulsoup4
 
 ## Installation
