@@ -1,5 +1,3 @@
-from bs4 import BeautifulSoup
-
 def has_style(tag):
 	return tag.has_attr('style')
 
@@ -38,8 +36,7 @@ def dfs(soup, v):
 	except Exception as e:
 		pass
 
-def extract(html, text_only = True, encoding = 'gb18030', remove_img = True):
-	soup = BeautifulSoup(html, from_encoding = encoding)
+def extract(soup, text_only = True, remove_img = True):
 	filt = ['script', 'noscript', 'style', 'embed', 'label', 'form', 'input', 'iframe', 'head', 'meta', 'link', 'object', 'aside', 'channel']
 	if remove_img:
 		filt.append('img')
