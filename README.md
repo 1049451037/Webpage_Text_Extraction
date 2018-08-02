@@ -10,13 +10,9 @@ Extract main textual information from HTML.
 
 ## Installation
 
-1. Download this repository.
-2. Change current directory into this folder.   
-3. Installation.
-
-    ```shell
-    pip install .
-    ```
+```shell
+pip install pextract
+```
 
 ## Tutorial
 

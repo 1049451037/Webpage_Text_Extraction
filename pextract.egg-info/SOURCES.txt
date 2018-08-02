@@ -1,0 +1,10 @@
+README.md
+setup.py
+pextract/__init__.py
+pextract/pextract.py
+pextract.egg-info/PKG-INFO
+pextract.egg-info/SOURCES.txt
+pextract.egg-info/dependency_links.txt
+pextract.egg-info/not-zip-safe
+pextract.egg-info/requires.txt
+pextract.egg-info/top_level.txt
