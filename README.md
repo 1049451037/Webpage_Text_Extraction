@@ -14,7 +14,7 @@ pip install pextract
 
 ## Tutorial
 
-[LINK](http://lvqingsong.top/extract-main-textual-information-from-html/)
+[LINK](http://lvqingsong.info/extract-main-textual-information-from-html/)
 
 ## Publication
 
